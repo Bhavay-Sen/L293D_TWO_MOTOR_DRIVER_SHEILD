@@ -3698,6 +3698,16 @@
 	)
 	(wire
 		(pts
+			(xy 123.19 44.45) (xy 125.73 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "255e0d29-7746-4ffd-8e8b-1681bb2ef9d6")
+	)
+	(wire
+		(pts
 			(xy 53.34 80.01) (xy 44.45 80.01)
 		)
 		(stroke
@@ -3725,16 +3735,6 @@
 			(type default)
 		)
 		(uuid "2a72f1e3-c528-40e3-9504-bc98cd730ab6")
-	)
-	(wire
-		(pts
-			(xy 123.19 59.69) (xy 125.73 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2c5b54f1-8fbe-4b31-aa9c-ecae88acb1e9")
 	)
 	(wire
 		(pts
@@ -3798,6 +3798,16 @@
 	)
 	(wire
 		(pts
+			(xy 123.19 59.69) (xy 125.73 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "39f7d2ef-af7e-48c2-b97e-658033b14c4c")
+	)
+	(wire
+		(pts
 			(xy 142.24 54.61) (xy 142.24 44.45)
 		)
 		(stroke
@@ -3855,16 +3865,6 @@
 			(type default)
 		)
 		(uuid "4c0452a7-d4f4-4aea-b76e-e60466c55c8a")
-	)
-	(wire
-		(pts
-			(xy 123.19 44.45) (xy 125.73 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4daa6de2-eef0-49af-b801-1f976e742eed")
 	)
 	(wire
 		(pts
@@ -4008,6 +4008,16 @@
 	)
 	(wire
 		(pts
+			(xy 123.19 52.07) (xy 125.73 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d4f022c-6dfe-46ac-892b-e5b6fda93e7d")
+	)
+	(wire
+		(pts
 			(xy 78.74 115.57) (xy 83.82 115.57)
 		)
 		(stroke
@@ -4035,16 +4045,6 @@
 			(type default)
 		)
 		(uuid "8c8454f1-596f-40e6-8e54-b09aa5343286")
-	)
-	(wire
-		(pts
-			(xy 123.19 52.07) (xy 125.73 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8ec53063-8143-4c5e-b527-a909dd4d3398")
 	)
 	(wire
 		(pts
@@ -5340,17 +5340,33 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 123.19 59.69 0)
+		(lib_id "Device:R")
+		(at 129.54 52.07 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1ef023fb-ecfc-444b-9179-36ae133ea453")
-		(property "Reference" "#PWR020"
-			(at 123.19 66.04 0)
+		(uuid "1ff19722-bfad-476a-a660-2a902e3f4134")
+		(property "Reference" "R3"
+			(at 129.54 47.752 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "220R"
+			(at 129.54 49.53 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+			(at 129.54 53.848 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5358,16 +5374,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND"
-			(at 123.19 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 123.19 59.69 0)
+		(property "Datasheet" "~"
+			(at 129.54 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5375,17 +5383,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 123.19 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 123.19 59.69 0)
+		(property "Description" "Resistor"
+			(at 129.54 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5394,12 +5393,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "8c4463bd-b6ee-4e3a-afc1-fa66bd4f115b")
+			(uuid "a5d87ec6-2c19-44e7-8d87-0f7b2fa14dc3")
+		)
+		(pin "2"
+			(uuid "329c8932-6c6c-4dd1-bafa-b7bdd1207954")
 		)
 		(instances
 			(project "L293D_TWO_MOTOR_DRIVER_SHEILD"
 				(path "/3dcb551c-5751-4887-af73-a9b6c7bbd8b5"
-					(reference "#PWR020")
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -5513,73 +5515,6 @@
 			(project "L293D_TWO_MOTOR_DRIVER_SHEILD"
 				(path "/3dcb551c-5751-4887-af73-a9b6c7bbd8b5"
 					(reference "U1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 129.54 44.45 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "260ca523-56c8-461a-94a5-ff95a162c34f")
-		(property "Reference" "R2"
-			(at 129.54 48.768 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "220R"
-			(at 129.54 46.99 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
-			(at 129.54 42.672 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 129.54 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 129.54 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1f0d6087-c9c8-4886-9bdd-1160a738c71c")
-		)
-		(pin "2"
-			(uuid "2d157394-dc86-4889-8875-b895d9f9e279")
-		)
-		(instances
-			(project "L293D_TWO_MOTOR_DRIVER_SHEILD"
-				(path "/3dcb551c-5751-4887-af73-a9b6c7bbd8b5"
-					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -5719,6 +5654,73 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 123.19 59.69 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2cf98bd1-30dd-450c-b556-6ee958f5b5be")
+		(property "Reference" "#PWR020"
+			(at 123.19 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 123.19 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 123.19 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 123.19 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 123.19 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a59b90f5-2c65-49a0-ac34-996b408ed29b")
+		)
+		(instances
+			(project "L293D_TWO_MOTOR_DRIVER_SHEILD"
+				(path "/3dcb551c-5751-4887-af73-a9b6c7bbd8b5"
+					(reference "#PWR020")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 35.56 147.32 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5777,6 +5779,74 @@
 			(project "L293D_TWO_MOTOR_DRIVER_SHEILD"
 				(path "/3dcb551c-5751-4887-af73-a9b6c7bbd8b5"
 					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 129.54 44.45 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "33adc9af-7ff1-4e12-8f61-019aa4824817")
+		(property "Reference" "R2"
+			(at 129.54 40.132 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "220R"
+			(at 129.54 41.91 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+			(at 129.54 46.228 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 129.54 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 129.54 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "83fb0136-e408-4455-9195-03cccf57281f")
+		)
+		(pin "2"
+			(uuid "2b481608-d7e8-493c-9061-847317af0786")
+		)
+		(instances
+			(project "L293D_TWO_MOTOR_DRIVER_SHEILD"
+				(path "/3dcb551c-5751-4887-af73-a9b6c7bbd8b5"
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -5848,32 +5918,18 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED")
-		(at 137.16 59.69 0)
+		(lib_id "power:GND")
+		(at 123.19 44.45 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "3881b379-f4a3-4773-9594-c793753c4b6d")
-		(property "Reference" "D5"
-			(at 136.652 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LED"
-			(at 137.16 62.738 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_THT:LED_D5.0mm"
-			(at 137.16 59.69 0)
+		(fields_autoplaced yes)
+		(uuid "422f1c7f-1458-4aa4-bdb8-5cecf1eaab91")
+		(property "Reference" "#PWR018"
+			(at 123.19 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5881,8 +5937,16 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 137.16 59.69 0)
+		(property "Value" "GND"
+			(at 123.19 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 123.19 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5890,8 +5954,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Light emitting diode"
-			(at 137.16 59.69 0)
+		(property "Datasheet" ""
+			(at 123.19 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5899,16 +5963,22 @@
 				(hide yes)
 			)
 		)
-		(pin "2"
-			(uuid "4843f763-328e-40a4-81a2-846776e9587f")
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 123.19 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
 		(pin "1"
-			(uuid "241d081a-85e4-4594-b8b8-29fe536dc491")
+			(uuid "c87c5fb8-802e-44ca-ac83-d2e5ee73714a")
 		)
 		(instances
 			(project "L293D_TWO_MOTOR_DRIVER_SHEILD"
 				(path "/3dcb551c-5751-4887-af73-a9b6c7bbd8b5"
-					(reference "D5")
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -6321,6 +6391,142 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:LED")
+		(at 137.16 59.69 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5c4271ef-67e5-4dc4-ae50-ce75f4989c9a")
+		(property "Reference" "D5"
+			(at 136.652 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 137.16 56.642 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_THT:LED_D5.0mm"
+			(at 137.16 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 137.16 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 137.16 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "bd57cd44-93df-4eed-a339-d558b579f66b")
+		)
+		(pin "1"
+			(uuid "9b316857-381b-4f76-91f6-769100ba6c89")
+		)
+		(instances
+			(project "L293D_TWO_MOTOR_DRIVER_SHEILD"
+				(path "/3dcb551c-5751-4887-af73-a9b6c7bbd8b5"
+					(reference "D5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 123.19 52.07 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5ec82c0d-fb6d-4a51-887b-969964cf0872")
+		(property "Reference" "#PWR019"
+			(at 123.19 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 123.19 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 123.19 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 123.19 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 123.19 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c39f465f-804f-48c1-90ec-06f0d1385dca")
+		)
+		(instances
+			(project "L293D_TWO_MOTOR_DRIVER_SHEILD"
+				(path "/3dcb551c-5751-4887-af73-a9b6c7bbd8b5"
+					(reference "#PWR019")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
 		(at 35.56 142.24 0)
 		(unit 1)
@@ -6386,73 +6592,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 129.54 59.69 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "62048a0e-a73f-4535-93ec-4cabfe9880a6")
-		(property "Reference" "R4"
-			(at 129.54 64.008 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "220R"
-			(at 129.54 62.23 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
-			(at 129.54 57.912 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 129.54 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 129.54 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "5c5605b0-5a97-4f96-a0a1-e8bd11f6caca")
-		)
-		(pin "2"
-			(uuid "752c9b96-16a0-434e-a8d8-44a969de742d")
-		)
-		(instances
-			(project "L293D_TWO_MOTOR_DRIVER_SHEILD"
-				(path "/3dcb551c-5751-4887-af73-a9b6c7bbd8b5"
-					(reference "R4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3.3V")
 		(at 170.18 44.45 0)
 		(unit 1)
@@ -6512,139 +6651,6 @@
 			(project "L293D_TWO_MOTOR_DRIVER_SHEILD"
 				(path "/3dcb551c-5751-4887-af73-a9b6c7bbd8b5"
 					(reference "#PWR014")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 123.19 52.07 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7f946350-624b-48b0-bc88-747ede7cf236")
-		(property "Reference" "#PWR019"
-			(at 123.19 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 123.19 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 123.19 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 123.19 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 123.19 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a69837be-caf9-42b3-b06b-e931109dd6a4")
-		)
-		(instances
-			(project "L293D_TWO_MOTOR_DRIVER_SHEILD"
-				(path "/3dcb551c-5751-4887-af73-a9b6c7bbd8b5"
-					(reference "#PWR019")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 129.54 52.07 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "850d95bc-fe6b-42ba-ad1e-115aa66061fb")
-		(property "Reference" "R3"
-			(at 129.54 56.388 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "220R"
-			(at 129.54 54.61 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
-			(at 129.54 50.292 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 129.54 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 129.54 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "353f8374-71f7-47c8-86b1-cda42c41e382")
-		)
-		(pin "2"
-			(uuid "323222b2-91f4-4ba4-9d5b-311ff54f2fc1")
-		)
-		(instances
-			(project "L293D_TWO_MOTOR_DRIVER_SHEILD"
-				(path "/3dcb551c-5751-4887-af73-a9b6c7bbd8b5"
-					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -6905,6 +6911,74 @@
 			(project "L293D_TWO_MOTOR_DRIVER_SHEILD"
 				(path "/3dcb551c-5751-4887-af73-a9b6c7bbd8b5"
 					(reference "#PWR012")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 137.16 44.45 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9638a103-54d4-4783-9594-177ea9bac7c8")
+		(property "Reference" "D3"
+			(at 136.652 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 137.16 41.402 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_THT:LED_D5.0mm"
+			(at 137.16 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 137.16 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 137.16 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "230d0e9c-ac95-4fa0-9a81-0815b266680b")
+		)
+		(pin "1"
+			(uuid "c4826473-3472-4dd5-8073-eb58e0b2f7a7")
+		)
+		(instances
+			(project "L293D_TWO_MOTOR_DRIVER_SHEILD"
+				(path "/3dcb551c-5751-4887-af73-a9b6c7bbd8b5"
+					(reference "D3")
 					(unit 1)
 				)
 			)
@@ -7335,72 +7409,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 123.19 44.45 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b3636f62-a89f-4b83-833d-e33269b8d47f")
-		(property "Reference" "#PWR018"
-			(at 123.19 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 123.19 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 123.19 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 123.19 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 123.19 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "758dbaaa-a81f-4bee-bfdc-dae7559124b8")
-		)
-		(instances
-			(project "L293D_TWO_MOTOR_DRIVER_SHEILD"
-				(path "/3dcb551c-5751-4887-af73-a9b6c7bbd8b5"
-					(reference "#PWR018")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+5V")
 		(at 137.16 91.44 0)
 		(unit 1)
@@ -7531,6 +7539,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 129.54 59.69 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bd9cab81-58e4-42a5-b1a7-83d0bcf0991f")
+		(property "Reference" "R4"
+			(at 129.54 55.372 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "220R"
+			(at 129.54 57.15 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+			(at 129.54 61.468 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 129.54 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 129.54 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f4e4d250-64d5-4781-b880-c05f03d78af5")
+		)
+		(pin "2"
+			(uuid "cbb98488-2484-4a21-b56c-62586c6a73a3")
+		)
+		(instances
+			(project "L293D_TWO_MOTOR_DRIVER_SHEILD"
+				(path "/3dcb551c-5751-4887-af73-a9b6c7bbd8b5"
+					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 81.28 87.63 0)
 		(unit 1)
@@ -7598,22 +7674,24 @@
 	(symbol
 		(lib_id "Device:LED")
 		(at 137.16 52.07 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "d198bdd4-279b-4564-8d8e-c0961712185c")
+		(uuid "ccfb5b33-c5bd-4475-8832-6dd64e93cf92")
 		(property "Reference" "D4"
-			(at 136.652 57.15 0)
+			(at 136.652 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Value" "LED"
-			(at 137.16 55.118 0)
+			(at 137.16 49.022 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7648,10 +7726,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "483067f8-4f1c-4d8c-a995-5f275cb461bf")
+			(uuid "45efdb84-202a-4d47-9077-9dc3f2511b05")
 		)
 		(pin "1"
-			(uuid "f2d129ca-e655-4d85-b0da-867f05fe4393")
+			(uuid "b3223cec-bb03-4702-9e67-e4f2ff3bbbb0")
 		)
 		(instances
 			(project "L293D_TWO_MOTOR_DRIVER_SHEILD"
@@ -7861,73 +7939,6 @@
 			(project "L293D_TWO_MOTOR_DRIVER_SHEILD"
 				(path "/3dcb551c-5751-4887-af73-a9b6c7bbd8b5"
 					(reference "#PWR024")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 137.16 44.45 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "dda30e3a-3ac9-4f8a-8afc-c29856077ae4")
-		(property "Reference" "D3"
-			(at 136.652 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LED"
-			(at 137.16 47.498 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_THT:LED_D5.0mm"
-			(at 137.16 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 137.16 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 137.16 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "f3bce7c0-8087-44e6-a1a2-48041a6cdd82")
-		)
-		(pin "1"
-			(uuid "f1e86048-36a7-476e-add6-d2d7d53f5881")
-		)
-		(instances
-			(project "L293D_TWO_MOTOR_DRIVER_SHEILD"
-				(path "/3dcb551c-5751-4887-af73-a9b6c7bbd8b5"
-					(reference "D3")
 					(unit 1)
 				)
 			)
